@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player UI</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #920a84;
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px;
+            background-color: rgb(20, 13, 2);
+            color: rgb(236, 233, 233);
+        }
+
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #040d09;
+            border-radius: 9px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #11cd53;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .now-playing {
+            width: 320px;
+            height: 320px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 12px;
+
+            border: 2px solid #0c7c33;
+            border-radius: 10px;
+            padding: 2px;
+            background: linear-gradient(135deg, #120000, #2a2a2a);
+            box-shadow: 0 10px 30px rgba(18, 2, 2, 0.4);
+            text-align: center;
+        }
+
+        .now-playing p {
+            margin: 0;
+        }
+
+        audio {
+            width: 90%;
+        }
+
+        .actions {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .actions a {
+            text-decoration: none;
+            padding: 8px 20px;
+            background-color: #074b62;
+            color: rgb(237, 233, 233);
+            border-radius: 20px;
+            font-weight: bold;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Music</h1>
+</header>
+
+<section>
+    <h2>Now Playing</h2>
+
+    <div class="now-playing">
+        <p style="font-size: 30px;"><strong>Song:</strong> Yethi Yethi</p>
+        <p style="color: #b3b3b3;"><strong>Artist:</strong> Harris Jayaraj</p>
+
+        <audio controls>
+            <source src="song1.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="actions">
+            <a href="#details">View Details</a>
+        </div>
+    </div>
+</section>
+
+<section id="details">
+    <h2>Song Details</h2>
+    <p><strong>Album:</strong> Calm Beats</p>
+    <p><strong>Genre:</strong> Instrumental</p>
+    <p><strong>Duration:</strong> 3:45</p>
+    <p><strong>Release Year:</strong> 2024</p>
+</section>
+
+<footer>
+    © My Music
+</footer>
+
+</body>
+</html>
+ music UI
